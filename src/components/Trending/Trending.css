@@ -1,0 +1,25 @@
+.trending {
+  background-color: #ecf0f3;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #81878d;
+  padding: 16px;
+}
+.trending_explore {
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #e8edf1;
+  padding: 16px;
+}
+.trending__topic {
+  color: #81878d;
+  font-size: 14px;
+}
+.trending__keyword,
+.trending__counts {
+  color: #81878d;
+  margin-top: 6px;
+}
+.trending__keyword {
+  font-weight: bold;
+  color: var(--mainBlack);
+}

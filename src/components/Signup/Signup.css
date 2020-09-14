@@ -1,0 +1,75 @@
+/* Dialog */
+.dialog {
+  width: 500px;
+}
+.dialog__title {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 14px 0;
+}
+.dialog__title__link {
+  text-align: center;
+  margin: auto;
+}
+.dialog__title__icon {
+  color: var(--primaryBlue);
+  font-size: 30px !important;
+}
+.dialog__title button {
+  position: absolute;
+  right: 30px;
+  padding: 6px 20px;
+  background: var(--primaryBlue);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  outline: none;
+}
+
+.dialog__title button.disabled {
+  background: var(--secondaryBlue);
+  cursor: unset;
+}
+
+.dialog__content {
+  margin-bottom: 20px;
+}
+.dialog__content__header {
+  margin-bottom: 20px;
+}
+.dialog__content__change {
+  margin: 16px 0;
+  color: var(--primaryBlue);
+  font-size: 14px;
+  display: flex;
+}
+.dialog__content__change p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.dialog__content__birth {
+  margin-top: 20px;
+}
+.dialog__content__birth h5 {
+  color: var(--mainGray);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.dialog__content__birth__action {
+  display: flex;
+  align-items: center;
+}
+.dialog__content__select:nth-child(1) {
+  flex: 5;
+}
+.dialog__content__select:nth-child(2) {
+  margin: 0 10px;
+  flex: 2;
+}
+.dialog__content__select:nth-child(3) {
+  flex: 3;
+}

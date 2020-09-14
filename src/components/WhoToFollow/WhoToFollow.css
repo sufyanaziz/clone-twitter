@@ -1,0 +1,18 @@
+.suggest {
+  background-color: #ecf0f3;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #81878d;
+  padding: 10px 16px;
+}
+.suggest__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.suggest__main p:nth-child(1) {
+  font-weight: bold;
+}
+.suggest__main p:nth-child(2) {
+  color: #81878d;
+}

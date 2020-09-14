@@ -1,0 +1,100 @@
+.welcome {
+  display: flex;
+  height: 90vh;
+  position: relative;
+  z-index: 1;
+}
+.welcome__banner,
+.welcome__action {
+  flex: 1;
+}
+
+.welcome__banner {
+  background-color: var(--secondaryBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.welcome__banner__icon {
+  position: absolute;
+  font-size: 632px !important;
+  left: 150px;
+  color: var(--primaryBlue);
+  z-index: 0;
+}
+.welcome__banner__title {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+.welcome__banner__title__icon {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.welcome__banner__title__icon .icon-welcome {
+  font-size: 1.8rem !important;
+}
+.welcome__banner__title__icon .title {
+  margin-left: 22px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Welcome_Action Section */
+.welcome__action {
+  background-color: var(--mainWhite);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome__action__card {
+  width: 60%;
+}
+.welcome__action__card h1 {
+  margin-bottom: 4rem;
+}
+.welcome__action__card p {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.welcome__action__card__icon {
+  font-size: 3rem !important;
+  color: var(--primaryBlue);
+  margin-bottom: 20px;
+}
+.welcome__action__card__action {
+  display: flex;
+  flex-direction: column;
+}
+.welcome__action__card__action button,
+.welcome__action__card__action .login__btn {
+  padding: 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.welcome__action__card__action button:nth-child(1) {
+  background-color: var(--primaryBlue);
+  color: var(--mainWhite);
+}
+.welcome__action__card__action button:nth-child(1):hover {
+  background-color: var(--hoverPrimaryBlue);
+}
+.welcome__action__card__action .login__btn {
+  border: 1px solid var(--primaryBlue);
+  color: var(--primaryBlue);
+}
+.welcome__action__card__action .login__btn:hover {
+  background-color: var(--hoverSecondaryBlue);
+}

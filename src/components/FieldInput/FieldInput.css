@@ -1,0 +1,24 @@
+.input {
+  width: 100%;
+}
+.input textarea {
+  width: 100%;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  border: none;
+  font-size: 16px;
+}
+.input hr {
+  display: none;
+}
+.input textarea:focus + hr {
+  display: block;
+  margin-top: 10px;
+}
+.action {
+  margin-top: 4px;
+  padding: 8px 0;
+  display: flex;
+  justify-content: flex-end;
+}

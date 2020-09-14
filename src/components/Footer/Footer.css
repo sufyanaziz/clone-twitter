@@ -1,0 +1,19 @@
+.footer {
+  background-color: var(--mainWhite);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+a {
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--mainGray);
+  font-weight: 400;
+}
+a:hover {
+  text-decoration: underline;
+}

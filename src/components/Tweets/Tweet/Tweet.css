@@ -1,0 +1,42 @@
+.tweet__author {
+  display: flex;
+  align-items: center;
+  color: var(--mainBlack);
+}
+.verify__icon {
+  color: var(--primaryBlue);
+  margin-left: 5px;
+  font-size: 20px !important;
+}
+.tweet__author .tweet__author__name {
+  font-weight: bold;
+}
+.tweet__author .tweet__author__username {
+  margin: 0 5px;
+  color: #868c94;
+}
+.tweet__author .tweet__author__date {
+  color: #7f858b;
+}
+.tweet__tweets {
+  margin: 6px 0;
+}
+
+.tweet__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 5px 0;
+}
+.tweet__info div {
+  display: flex;
+  align-items: center;
+}
+.tweet__info div p {
+  font-size: 14px;
+  margin-left: 12px;
+}
+.tweet__info__icon {
+  color: #868c94;
+  font-size: 20px !important;
+  cursor: pointer;
+}
