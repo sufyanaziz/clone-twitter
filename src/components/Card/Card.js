@@ -24,7 +24,7 @@ const CardContainer = styled.div`
   border: 1px solid #e8edf1;
   border-bottom: ${(props) => props.type === "info" && "1px solid #81878d"};
   padding: 10px 16px;
-  display: flex;
+  display: ${(props) => props.type !== "notification" && "flex"};
   height: auto;
   max-height: 500px;
   &:hover {
@@ -37,8 +37,8 @@ const CardContainer = styled.div`
     cursor: ${(props) => (props.type === "input" ? "unset" : "pointer")};
   }
   & .card__image {
-    width: 60px;
-    height: 60px;
+    width: ${(props) => (props.type !== "notification" ? "60px" : "40px")};
+    height: ${(props) => (props.type !== "notification" ? "60px" : "40px")};
     margin-right: 6px;
   }
   & .card__image .image {

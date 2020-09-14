@@ -135,50 +135,54 @@ const HomeLayout = ({ user, history, children, page }) => {
         </div>
       </div>
       {/* For main container like tweet, messages, notifications, etc */}
-      <div className="homeLayout__container">
-        {/* Navbar */}
-        <div className="homeLayout__main__left">
-          {page === "explore" ? (
-            <div className="homeLayout__main__header">
-              <Search fullWidth />
+      {page !== "messages" ? (
+        <div className="homeLayout__container">
+          {/* Navbar */}
+          <div className="homeLayout__main__left">
+            {page === "explore" ? (
+              <div className="homeLayout__main__header">
+                <Search fullWidth />
+              </div>
+            ) : (
+              <div className="homeLayout__main__header">
+                <h3>{page}</h3>
+              </div>
+            )}
+            {page === "explore" ? (
+              <div className="homeLayout__main__trending">
+                <Trending page="explore" />
+              </div>
+            ) : (
+              <div className="homeLayout__main__content">{children}</div>
+            )}
+          </div>
+          {/* Main Content */}
+          <div className="homeLayout__main__right">
+            {page !== "explore" && (
+              <div className="homeLayout__main__navbar">
+                <Search fullWidth />
+              </div>
+            )}
+            {page !== "explore" && (
+              <div className="homeLayout__main__trending">
+                <Trending />
+              </div>
+            )}
+            <div
+              className={
+                page !== "explore"
+                  ? "homeLayout__main__suggest sticky__main__suggest"
+                  : "homeLayout__main__suggest"
+              }
+            >
+              <WhoToFollow />
+              <FooterMainContent />
             </div>
-          ) : (
-            <div className="homeLayout__main__header">
-              <h3>{page}</h3>
-            </div>
-          )}
-          {page === "explore" ? (
-            <div className="homeLayout__main__trending">
-              <Trending page="explore" />
-            </div>
-          ) : (
-            <div className="homeLayout__main__content">{children}</div>
-          )}
-        </div>
-        {/* Main Content */}
-        <div className="homeLayout__main__right">
-          {page !== "explore" && (
-            <div className="homeLayout__main__navbar">
-              <Search fullWidth />
-            </div>
-          )}
-          {page !== "explore" && (
-            <div className="homeLayout__main__trending">
-              <Trending />
-            </div>
-          )}
-          <div
-            className={
-              page !== "explore"
-                ? "homeLayout__main__suggest sticky__main__suggest"
-                : "homeLayout__main__suggest"
-            }
-          >
-            <WhoToFollow />
-            <FooterMainContent />
           </div>
         </div>
-      </div>
+      ) : (
+        <div>{children}</div>
+      )}
     </div>
   );
 };

@@ -3,8 +3,8 @@ import Layout from "../../components/Layout/HomeLayout";
 
 const Messages = ({ history }) => {
   return (
-    <Layout history={history}>
-      <h1>Messages</h1>
+    <Layout history={history} page="messages">
+      <h1>Messages is Comming Soon</h1>
     </Layout>
   );
 };

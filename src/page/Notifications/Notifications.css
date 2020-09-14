@@ -1,0 +1,67 @@
+.notification {
+  background-color: white;
+}
+
+.notification__header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-right: 1px solid #e8edf1;
+  border-left: 1px solid #e8edf1;
+}
+
+.notification__header h4 {
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.notification__header h4.notification__header__active {
+  color: var(--primaryBlue);
+  border-bottom: 2px solid var(--primaryBlue);
+}
+
+.notification__header h4:hover {
+  background-color: var(--hoverSecondaryBlue);
+  color: var(--primaryBlue);
+}
+
+.notification__card__header {
+  display: flex;
+  margin: 10px 0;
+}
+.notification__card__header p {
+  margin-right: 5px;
+}
+.notification__card__header p:nth-child(1) {
+  font-weight: bold;
+}
+.notification__card__main {
+  color: var(--mainGray);
+}
+
+.notification__card__author {
+  display: flex;
+  align-items: center;
+  color: var(--mainBlack);
+}
+.notification__card__icon {
+  color: var(--primaryBlue);
+  margin-left: 5px;
+  font-size: 20px !important;
+}
+.notification__card__author .notification__card__author__name {
+  font-weight: bold;
+}
+.notification__card__author .notification__card__author__username {
+  margin: 0 5px;
+  color: #868c94;
+}
+.notification__card__author .notification__card__author__date {
+  color: #7f858b;
+}
+.notification__card__main__mentions {
+  margin: 5px 0;
+}
